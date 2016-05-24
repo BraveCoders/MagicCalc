@@ -6,6 +6,7 @@ public class Main {
 
 		System.out.println("Magic calc!");
 		System.out.println("Gerrit push test.");
+		System.out.println("2nd Gerrit push test.");
 
 	}
 
