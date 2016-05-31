@@ -1,6 +1,6 @@
 package com.magiccalc.core;
 
-public class DivExpr {
+public class DivExpr  extends Expr{
 	Expr x;
 	Expr y;
 	public DivExpr(Expr x,Expr y) {

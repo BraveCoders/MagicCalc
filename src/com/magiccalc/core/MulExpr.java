@@ -1,6 +1,6 @@
 package com.magiccalc.core;
 
-public class MulExpr {
+public class MulExpr extends Expr{
 	Expr x;
 	Expr y;
 	public MulExpr(Expr x,Expr y) {
