@@ -10,4 +10,9 @@ public class SubExpr extends Expr{
 	public double getValue(){
 		return (this.x.getValue()-this.y.getValue());
 	}
+	@Override
+	public double getValueFor(double x) {
+		// TODO Auto-generated method stub
+		return (this.x.getValueFor(x)-this.y.getValueFor(x));
+	}
 }

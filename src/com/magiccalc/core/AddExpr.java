@@ -11,4 +11,7 @@ public class AddExpr extends Expr {
 		return (this.x.getValue()+this.y.getValue());
 	}
 
+	public double getValueFor(double x) {
+		return (this.x.getValueFor(x)+this.y.getValueFor(x));
+	}
 }

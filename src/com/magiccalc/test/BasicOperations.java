@@ -55,5 +55,19 @@ public class BasicOperations {
 		if(x != 6)
 			fail("Testcase " + counter + " of BasicOperations failed for expression 2/4*8+9-8-1+8/4 with exit value: " + x);
 	}
+	@Test
+	public void test5() {
+		Expr ex = exprFact.createExpr("2/4*x");
+		double x = ex.getValueFor(2);
+		if(x != 1)
+			fail("Testcase " + counter + " of BasicOperations failed for expression 2/4*x (x=2) with exit value: " + x);
+	}
+	@Test
+	public void test6() {
+		Expr ex = exprFact.createExpr("2/4*x+2^3");
+		double x = ex.getValueFor(2);
+		if(x != 9)
+			fail("Testcase " + counter + " of BasicOperations failed for expression 2/4*x+2^3 (x=2) with exit value: " + x);
+	}
 
 }

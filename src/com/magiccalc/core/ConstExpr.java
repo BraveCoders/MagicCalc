@@ -10,4 +10,9 @@ public class ConstExpr extends Expr {
 		// TODO Auto-generated method stub
 		return x;
 	}
+	@Override
+	public double getValueFor(double y) {
+		// TODO Auto-generated method stub
+		return x;
+	}
 }
