@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_eaaf667b",
+        "filename": "src/com/magiccalc/core/AddExpr.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1008275
+      },
+      "writtenOn": "2016-06-30T09:44:53Z",
+      "side": 1,
+      "message": "It should not be here! It was just for debug purpose. However you can just comment it.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 2
+      },
+      "revId": "d8a0715916ae362c556e80e30d3824c50e52bd83",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_eae646e7",
+        "filename": "src/com/magiccalc/core/ConstExpr.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1008275
+      },
+      "writtenOn": "2016-06-30T09:44:53Z",
+      "side": 1,
+      "message": "What is the purpose of this? getValue and getValueFor do not use s ever. In additional in case of exception in contructor x is never initialized.",
+      "range": {
+        "startLine": 4,
+        "startChar": 9,
+        "endLine": 4,
+        "endChar": 10
+      },
+      "revId": "d8a0715916ae362c556e80e30d3824c50e52bd83",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_cae942b9",
+        "filename": "src/com/magiccalc/core/ExprFact.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1008275
+      },
+      "writtenOn": "2016-06-30T09:44:53Z",
+      "side": 1,
+      "message": "We do not use it after all.",
+      "range": {
+        "startLine": 3,
+        "startChar": 27,
+        "endLine": 3,
+        "endChar": 28
+      },
+      "revId": "d8a0715916ae362c556e80e30d3824c50e52bd83",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8acc5a62",
+        "filename": "src/com/magiccalc/core/ExprFact.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1008275
+      },
+      "writtenOn": "2016-06-30T09:44:53Z",
+      "side": 1,
+      "message": "We do not use it after all.",
+      "range": {
+        "startLine": 6,
+        "startChar": 22,
+        "endLine": 6,
+        "endChar": 23
+      },
+      "revId": "d8a0715916ae362c556e80e30d3824c50e52bd83",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_4ad652f2",
+        "filename": "src/com/magiccalc/core/SubExpr.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1008275
+      },
+      "writtenOn": "2016-06-30T09:44:53Z",
+      "side": 1,
+      "message": "It should not be here. Comment it.",
+      "range": {
+        "startLine": 16,
+        "startChar": 12,
+        "endLine": 16,
+        "endChar": 13
+      },
+      "revId": "d8a0715916ae362c556e80e30d3824c50e52bd83",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
