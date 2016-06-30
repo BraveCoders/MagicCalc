@@ -2,8 +2,13 @@ package com.magiccalc.core;
 
 public class ConstExpr extends Expr {
 	double x;
+	String s;
 	public ConstExpr(String x){
+		try{
 		this.x=Double.parseDouble(x);
+		}catch(Exception e){
+		this.s=x;
+		}
 	}
 	@Override
 	public double getValue() {

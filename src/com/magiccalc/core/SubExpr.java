@@ -13,6 +13,7 @@ public class SubExpr extends Expr{
 	@Override
 	public double getValueFor(double x) {
 		// TODO Auto-generated method stub
+		System.out.println(this.x.getValueFor(x)-this.y.getValueFor(x));
 		return (this.x.getValueFor(x)-this.y.getValueFor(x));
 	}
 }

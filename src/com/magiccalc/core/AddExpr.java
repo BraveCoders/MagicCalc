@@ -12,6 +12,7 @@ public class AddExpr extends Expr {
 	}
 
 	public double getValueFor(double x) {
+		System.out.println(this.x.getValueFor(x)+this.y.getValueFor(x));
 		return (this.x.getValueFor(x)+this.y.getValueFor(x));
 	}
 }
