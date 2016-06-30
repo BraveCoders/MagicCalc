@@ -1,9 +1,7 @@
 package com.magiccalc.core;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 
 public class ExprFact {
 	static List<Expr> list = new ArrayList<Expr>();
@@ -28,7 +26,6 @@ public class ExprFact {
 		} else return new ConstExpr(value);
 
 	}
-	
 	public String getValuePar(String bracket) {
 		List<Integer> x= new ArrayList<Integer>();
 		for (int index = 0; index < bracket.length(); index++)
@@ -44,7 +41,6 @@ public class ExprFact {
 				bracket = bracket.substring(0, start) + "expr" + (list.size()-1) + bracket.substring(index+1, bracket.length());
 			}			
 		}
-		
 		return bracket;
 }
 }
