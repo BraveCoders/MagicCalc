@@ -20,29 +20,27 @@ public class ExprFact {
 			return new PowExpr(createExpr(value.substring(0,value.lastIndexOf("^"))), createExpr(value.substring(value.lastIndexOf("^")+1,value.length())));
 		} else if (value.equals("x")){
 			return new xExpr();
-		} else if (value.equals("expr[0..9]*")){
-			return list.get(0);
+		} else if (value.length()>3 && value.substring(0,4).equals("expr")){
+			int index = Integer.parseInt(value.substring(4));
+			return list.get(index);
 		} else return new ConstExpr(value);
 
 	}
-	
 	public String getValuePar(String bracket) {
-		
-		int count = 1;
-		int start = bracket.indexOf('(');
-		int end = start + 1;
-		while (count > 0)
+		List<Integer> x= new ArrayList<Integer>();
+		for (int index = 0; index < bracket.length(); index++)
 		{
-			if (bracket.charAt(end) == '(') {
-				count += 1;
-
-			} else if (bracket.charAt(end) == ')') {
-				count -= 1;
+			if (bracket.charAt(index) == '(') {
+				x.add(index);
+				//System.out.println("Adding " + index + " to start indexes");
+			} else if (bracket.charAt(index) == ')') {
+				int start = x.get(x.size()-1);
+				x.remove(x.size()-1);
+				//System.out.println("Creating bracket from " + (start+1) + " to " + (index)+ " : " + bracket.substring(start+1, index));
+				list.add(createExpr(bracket.substring(start+1, index)));
+				bracket = bracket.substring(0, start) + "expr" + (list.size()-1) + bracket.substring(index+1, bracket.length());
 			}
-			end++;
 		}
-		
-		list.add(createExpr(bracket.substring(start+1, end-1)));
-		return bracket.substring(0, start) + "expr" + (list.size()-1) + bracket.substring(end, bracket.length());
+		return bracket;
 }
 }
