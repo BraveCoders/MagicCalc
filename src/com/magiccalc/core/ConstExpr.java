@@ -2,6 +2,7 @@ package com.magiccalc.core;
 
 public class ConstExpr extends Expr {
 	double x;
+	String s;
 	public ConstExpr(String x){
 		this.x=Double.parseDouble(x);
 	}
