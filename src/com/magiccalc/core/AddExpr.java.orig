@@ -3,7 +3,10 @@ package com.magiccalc.core;
 public class AddExpr extends Expr {
 	Expr x;
 	Expr y;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c2d0dbdf833b69fc70713e2aed24274e65dcf83a
 	public AddExpr(Expr x, Expr y) {
 		this.x = x;
 		this.y = y;

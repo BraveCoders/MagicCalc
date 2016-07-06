@@ -69,5 +69,11 @@ public class BasicOperations {
 		if(x != 9)
 			fail("Testcase " + counter + " of BasicOperations failed for expression 2/4*x+2^3 (x=2) with exit value: " + x);
 	}
-
+	@Test
+	public void test7() {
+		Expr ex = exprFact.createExpr("2+(4*(1+x))+2^3");
+		double x = ex.getValueFor(2);
+		if(x != 22)
+			fail("Testcase " + counter + " of BasicOperations failed for expression 2+(4*(1+x))+2^3 (x=2) with exit value: " + x);
+	}
 }

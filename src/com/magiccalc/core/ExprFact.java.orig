@@ -20,20 +20,11 @@ public class ExprFact {
 			return new PowExpr(createExpr(value.substring(0,value.lastIndexOf("^"))), createExpr(value.substring(value.lastIndexOf("^")+1,value.length())));
 		} else if (value.equals("x")){
 			return new xExpr();
-		} else if(value.length()>3 && value.substring(0,3).equals("sin")){
-			return new SinExpr(list.get(Integer.parseInt(value.substring(7))));
-		} else if(value.length()>3 && value.substring(0,3).equals("cos")){
-			return new CosExpr(list.get(Integer.parseInt(value.substring(7))));
-		} else if(value.length()>3 && value.substring(0,3).equals("tan")){
-			return new TanExpr(list.get(Integer.parseInt(value.substring(7))));
-		} else if(value.length()>3 && value.substring(0,3).equals("cot")){
-			return new CotExpr(list.get(Integer.parseInt(value.substring(7))));
 		} else if (value.length()>3 && value.substring(0,4).equals("expr")){
 			int index = Integer.parseInt(value.substring(4));
 			return list.get(index);
-		} else if(value.equals("pi")){
-			return new PiExpr();
 		} else return new ConstExpr(value);
+
 	}
 	public String getValuePar(String bracket) {
 		List<Integer> x= new ArrayList<Integer>();
@@ -48,8 +39,15 @@ public class ExprFact {
 				//System.out.println("Creating bracket from " + (start+1) + " to " + (index)+ " : " + bracket.substring(start+1, index));
 				list.add(createExpr(bracket.substring(start+1, index)));
 				bracket = bracket.substring(0, start) + "expr" + (list.size()-1) + bracket.substring(index+1, bracket.length());
+<<<<<<< HEAD
+			}			
+		}
+		return bracket;
+}
+=======
 			}
 		}
 		return bracket;
+>>>>>>> c2d0dbdf833b69fc70713e2aed24274e65dcf83a
 }
 }
